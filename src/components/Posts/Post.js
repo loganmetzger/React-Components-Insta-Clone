@@ -24,7 +24,7 @@ const Post = props => {
       {/* LikeSection is missing a prop it needs to function! */}
       <LikeSection id={post.id} likeCount={post.likes} likePost={(postId) => likePost(post.id)} />
       {/* Comments also wants its props! */}
-      <Comments posts={post}/>
+      <Comments comments={post}/>
     </div>
   );
 };
