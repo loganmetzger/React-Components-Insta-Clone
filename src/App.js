@@ -25,10 +25,10 @@ const App = () => {
   const likePost = postId => {
 
     setPosts(posts.map(activePost => {
-      if (activePost.id === posts.id) {
+      if (activePost.id === postId) {
         return {...activePost, likes: activePost.likes + 1}
       } else {
-      return activePost
+        return activePost
       }
     }))
     // This function is passed into nested components using props, to allow them to update application state.
